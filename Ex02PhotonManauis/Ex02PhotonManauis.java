@@ -16,7 +16,7 @@ public class Ex02PhotonManauis {
        int numberOfGuesses = 3;
        int upperLimit = 10;
        int randomMin = 1;
-       int random = (int) Math.floor(Math.random()*(upperLimit-randomMin)) + randomMin;
+       int random = (int) Math.floor(Math.random()*(upperLimit)) + randomMin;
        String stringUserGuess;
        int userGuess;
        String playAgain;
