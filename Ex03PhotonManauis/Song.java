@@ -15,7 +15,7 @@ public class Song {
     
     public Song(String title, String album, int yearRelease) {
         this.title = title;
-        this.album= album;
+        this.album = album;
         this.yearRelease = yearRelease;
     }
     

@@ -18,11 +18,10 @@ public class main {
         tdr.introduceBook();
         tbg.introduceBook();
         
-        Singer rina = new Singer("Rina Sawayama", 0, 0.0, new Song("Dynasty", "SAWAYAMA", 2020));
+        Singer rina = new Singer("Rina Sawayama", 0, 0.0, new Song("Tokyo Love Hotel", "SAWAYAMA", 2020));
         rina.checkInfo();
         rina.performForAudience(12);
-        rina.changeFavSong("Minor Feelings", "Hold the Girl", 2022);
+        rina.changeFavSong("Imagining", "Hold the Girl", 2022);
         rina.checkInfo();
-        
     }
 }
