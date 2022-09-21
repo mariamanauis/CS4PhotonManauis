@@ -14,15 +14,15 @@ public class Book {
     int noPages;
     int yearRelease;
     
-    public Book(String b, String a, int p, int y) {
-        bookTitle = b;
-        author = a;
-        noPages = p;
-        yearRelease = y;
+    public Book(String bookTitle, String author, int noPages, int yearRelease) {
+        this.bookTitle = bookTitle;
+        this.author = author;
+        this.noPages = noPages;
+        this.yearRelease = yearRelease;
     }
     
     public void introduceBook() {
         System.out.println(bookTitle + " by " + author + " is " + noPages + 
-                " long and was released in " + yearRelease + ".");
+                " pages long and was released in " + yearRelease + ".");
     }
 }

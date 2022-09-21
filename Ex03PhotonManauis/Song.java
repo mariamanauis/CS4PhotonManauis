@@ -10,7 +10,13 @@ package Ex03PhotonManauis;
  */
 public class Song {
     String title;
-    String artist;
+    String album;
     int yearRelease;
+    
+    public Song(String title, String album, int yearRelease) {
+        this.title = title;
+        this.album= album;
+        this.yearRelease = yearRelease;
+    }
     
 }
