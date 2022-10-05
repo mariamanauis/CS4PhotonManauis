@@ -32,7 +32,7 @@ public class Singer {
     //Getter Methods.
     public void checkInfo(){
         System.out.println(name + " is a singer who performed " + noOfPerformances 
-            + " times and earned a total of " + earnings + " pesos. Her favorite song is "
+            + " time(s) and earned a total of " + earnings + " pesos. Her favorite song is "
             + favoriteSong.returnTitle() + " from the album " + favoriteSong.returnAlbum() + " released in "
             + favoriteSong.returnYearRelease() + ".");
     }
