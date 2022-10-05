@@ -30,7 +30,7 @@ public class Singer {
     
     public void performForAudience(int numberOfPeople) {
         //each performance pays 100 pesos
-        noOfPerformances += numberOfPeople;
+        noOfPerformances += 1;
         earnings += numberOfPeople * 100;
     }
     
