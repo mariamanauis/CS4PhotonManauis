@@ -1,15 +1,16 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Ex04PhotonManauis;
 
 /**
  *
- * @author HP
+ * @author PHOTON
  */
 public class main {
-     public static void main(String[] args){
+    public static void main(String[] args){
         Book tpw = new Book("The Poppy War", "R.F. Kuang", 544, 2019);
         Book tdr = new Book("The Dragon Republic", "R.F. Kuang", 672, 2020);
         Book tbg = new Book("The Burning God", "R.F. Kuang", 656, 2021);

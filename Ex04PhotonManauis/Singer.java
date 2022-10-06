@@ -1,12 +1,13 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Ex04PhotonManauis;
 
 /**
  *
- * @author HP
+ * @author PHOTON
  */
 public class Singer {
     private String name;
@@ -60,16 +61,18 @@ public class Singer {
         earnings += numberOfPeople * 100;
         
         System.out.println(name + " has performed " + noOfPerformances + " times and earned " +
-            earnings + " pesos. They have performed " + totalPerformances + " time throughout their career.");
+            earnings + " pesos.");
     }
     
     public void performForAudience(Singer anotherSinger, int numberOfPeople){
         noOfPerformances += 1;
         anotherSinger.noOfPerformances += 1;
+        totalPerformances += 1;
         earnings = (numberOfPeople*100)/2;
         anotherSinger.earnings = (numberOfPeople*100)/2;
         
         System.out.println(name + " and " + anotherSinger.name + " performed together for "
             + numberOfPeople + " people and earned " + earnings + " pesos each.");
+        System.out.println("All singers have performed a total of " + totalPerformances + " times.");
     }
 }
