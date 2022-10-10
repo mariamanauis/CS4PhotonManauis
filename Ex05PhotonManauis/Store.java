@@ -48,23 +48,25 @@ public class Store {
       // check if Item with given name is in the itemList (you will need to loop over itemList) (if not, print statement that the store doesn't sell it)
       // get Item from itemList and add its cost to earnings
       // print statement indicating the sale
+      boolean isHere = false;
       for(int i = 0; i < itemList.size(); i++){
           if(itemList.get(i).getName().equalsIgnoreCase(name)){
               earnings += itemList.get(i).getCost();
+              isHere = true;
               System.out.println(name + " has been sold!");
           }
-          else {
-              System.out.println("The store does not sell " + name);
-          }
-      }  
+      }
+      if(!isHere){
+          System.out.println("The store does not sell " + name);
+      }
     }
     public void sellItem(Item i){
       // check if Item i exists in the store (there is a method that can help with this) (if not, print statement that the store doesn't sell it)
       // get Item i from itemList and add its cost to earnings
       // print statement indicating the sale
-      if(storeList.contains(i)){
+      if(itemList.contains(i)){
           earnings += i.getCost();
-          System.out.println("This item has been sold!");
+          System.out.println( i.getName() + " has been sold!");
       }
       else{
           System.out.println("The store does not sell this item");
@@ -93,7 +95,7 @@ public class Store {
     public void filterExpensive(double minCost){
       // loop over itemList and print all items with a cost higher than or equal to the specified value
       for(Item i: itemList){
-          if(i.getCost() <= minCost){
+          if(i.getCost() >= minCost){
               System.out.println(i.getName());
           }
       }
@@ -101,7 +103,7 @@ public class Store {
     public static void printStats(){
       // loop over storeList and print the name and the earnings'Store.java'
       for(Store s : storeList){
-          System.out.println(s.getName() + ": ");
+          System.out.print(s.getName() + ": ");
           System.out.println(s.getEarnings());
       }
     }
