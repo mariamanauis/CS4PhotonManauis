@@ -9,6 +9,6 @@ package exercise06photonmanauismaria;
  *
  * @author PHOTON
  */
-public class main {
+public class WaterType extends Monster{
     
 }
