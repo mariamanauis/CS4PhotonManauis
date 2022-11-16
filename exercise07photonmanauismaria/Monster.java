@@ -1,20 +1,20 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package exercise06photonmanauismaria;
+package exercise07photonmanauismaria;
 
 /**
  *
- * @author PHOTON
+ * @author HP
  */
 import java.util.ArrayList;
 
-public abstract class Monster {
+public abstract class Monster implements Interactive {
+    //private fields changed into protected
     protected final String name, type, strongAgainst, weakAgainst;
     protected int maxHP, hp, xp, lvl;
-    protected double atk, def;
+    protected double atk, def; //changed from int to double
     private boolean guard, charge;
     protected static ArrayList<Monster> monsterList = new ArrayList<>();
 
@@ -99,10 +99,8 @@ public abstract class Monster {
         System.out.println(name + " rested. It's health is now " + hp + ".");
     }
 
-    public abstract void special(){
-        System.out.println(name + " did a pose.");
-    }
-
+    public abstract void special();
+    
     public void resetHealth(){
         hp = maxHP;
     }
@@ -119,6 +117,11 @@ public abstract class Monster {
             def += 2;
             System.out.println(name + " levelled up to " + lvl + "!");
         }
+    }
+    
+    public void interact(){
+        System.out.println("Name: " + name);
+        System.out.println("Type: " + type);
     }
 
 }
