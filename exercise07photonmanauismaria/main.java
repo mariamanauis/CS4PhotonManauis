@@ -11,14 +11,15 @@ package exercise07photonmanauismaria;
 public class main {
     public static void main(String[] args) {
         FireType f = new FireType("Charmander", 30, 20);
-        GrassType g = new GrassType("Bulbasaur", 25, 25);
-        WaterType w = new WaterType("Mudkip", 20, 10);
+        Location l = new Location("Back Lobby", "Fruit Shake");
+        Trainer t = new Trainer("Jason", l);
+        NPC n = new NPC("Bob", l);
         
-        do{
-            g.attack(f);
-            f.attack(w);
-            w.attack(g);
-        }while(f.getHP() > 0 && g.getHP() > 0 && w.getHP() > 0);
+        System.out.println("Trainer interacts with monster.");
+        t.inspect(f);
+        System.out.println("Trainer interacts with NPC.");
+        t.inspect(n);
+        System.out.println("Trainer interacts with location.");
+        t.inspect(l);
     }
-    
 }
